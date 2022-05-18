@@ -1,0 +1,189 @@
+.encabezado {
+
+    background-color: black;
+
+}
+
+.titulo {
+    color:red;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+
+
+
+.hinchada { 
+    
+    border-radius: 20px;
+    border: 2px solid red;
+    display: flex;
+    margin: auto;
+    border: 4px;
+    padding: 7px;
+    max-width: 100%;
+
+
+}
+
+.seccion1, .videosyoutube, .glorias, .pie, .tiendoficial {
+    border: 2px solid black;
+    margin: 4px;
+}
+
+.tiendoficial {
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: red;
+  }
+  
+  .tienda {
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 3px;
+    align-items: center;
+    margin: auto
+  }
+  
+  .card { 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }
+  
+  .card-img-top {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+  }
+
+.display-2 { color: white;
+}
+
+  
+.videosyoutube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    border: 4px;
+}
+
+
+
+.videosdestacados {
+    font-size: 30px;
+
+}
+
+.glorias {
+
+    
+
+    background: url(imagenes/fondonob.jpg);
+
+}
+
+.iframe {
+    display: flex;
+    margin: auto;
+    border: 4px;
+    padding: 7px;
+    max-width: 100%;
+  }
+  
+
+  .tituloglorias {
+
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+
+
+  }
+
+
+  .slider-frame {
+    width: 300px;
+      height: auto;
+    margin:50px auto 0;
+    overflow: hidden;
+    }
+    
+    .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+    width: 100%;
+    list-style: none;
+    }
+    
+    .slider-frame img {
+    width: 100%;
+    }
+    
+    @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+
+footer {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    background: red;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.leyendapie { text-align: center;
+
+}
+
+.linkspie { text-align: center;
+ 
+}
+
+.listalinks { display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+}
+
+.canob { display:flex;
+    align-items:center;
+    width: 60px; 
+
+}
+
+.lpf { display:flex;
+    align-items:center;
+    width: 60px; 
+
+
+    }  
+    

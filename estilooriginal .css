@@ -1,0 +1,535 @@
+.encabezado, .encabezado1 {
+    display:flex;
+    align-items:center;
+    background: url(imagenes/fondologo.jpg);
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+   
+
+}
+
+@media (max-width: 300mp ) {
+
+  .encabezado, .encabezado1, .navegacion, .menu li, .secciones {
+    flex-direction: column;
+  }
+}
+
+
+.escudo {
+    display:flex;
+    align-items:center;
+    width: 200px;
+}
+
+.tiendoficial {
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: red;
+}
+
+.tienda {
+
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  align-items: center;
+  margin: auto
+}
+
+.card { 
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.card-img-top {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+}
+
+.iframe {
+  display: flex;
+  margin: auto;
+
+
+
+
+}
+
+.img-carousel { 
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  align-items: center;
+  margin: auto
+  
+}
+.carouselExampleControls {
+
+  background-color: black;
+}
+
+
+.historiaseccion .carouselExampleControls .carousel-inner { 
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  align-items: center;
+  margin: auto
+
+
+}
+
+
+
+
+
+
+h1 {color: white;
+    font-family: 'Tapestry', cursive;    
+    text-align: left;
+    
+
+}
+
+
+
+.seccion1, .seccion2, nav, aside, article, .contacto, .unite, footer {
+    border: 2px solid black;
+    margin: 4px;
+
+}
+
+p {text-align: left;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 50px;
+
+}
+
+.noticia {
+    font-family: arial;
+}
+
+a { color: red;
+
+}
+
+
+.navegacion { background-color: red;
+        position: sticky;
+        top: 0;
+
+
+}
+
+.navegacion1 { background-color: red;
+    position: sticky;
+    top: 0;
+
+
+}
+
+
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 5px;
+    font: bold 20px verdana;
+    width: 100;
+    position: relative;
+    background-color: black;
+    cursor: pointer;
+    transition: .3s ease all;
+    overflow: hidden;
+    
+}
+
+.menu li::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: grey;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  transition: .3s ease-in-out all;
+
+}
+
+.menu li:hover::after {
+  top: 0;
+
+}
+
+.menu span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all;
+}
+
+.contacto { 
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  margin: 0 auto;
+  background-color:black;
+  color:white;
+  font-size: 30px;
+  
+
+}
+
+
+.secciones {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+
+
+
+}
+
+.titulo {
+    color:red;
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+}
+.hinchada { 
+    
+    margin: 0 auto;
+    display: block;
+    width: 100;
+    border-radius: 20px;
+    border: 2px solid red;
+
+
+}
+
+.imgnob1 { 
+    
+   
+    width: 700px;
+
+}
+
+.imgnob2 { 
+    
+    
+    width: 700px;
+
+}
+
+.articulo {
+
+
+  color: white;
+  font-family: 'Tapestry', cursive;    
+  text-align: center;
+  font-size: 40px;
+
+
+  background: url(imagenes/fondonob.jpg);
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 2.9fr 0.3fr;
+    grid-template-rows: auto auto auto auto auto auto 0.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". encabezado ."
+      ". navegacion ."
+      ". seccion1 ."
+      ". plantel ."
+      ". contacto ."
+      ". articulo ."
+      ". pie .";
+  }
+  
+  .encabezado { grid-area: encabezado; }
+  
+  .navegacion { grid-area: navegacion; }
+
+  .plantel { grid-area: plantel; }
+
+  
+  .articulo { grid-area: articulo; }
+  
+  .seccion1 { grid-area: seccion1; }
+  
+  .pie { grid-area: pie; }
+  
+  .contacto { grid-area: contacto; }
+
+.jugadores {
+    
+    width: 400px;
+    
+
+
+}
+
+.tribuna {
+
+
+    
+    width: 400px;
+}
+
+
+footer {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    background: red;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+.leyendapie { text-align: center;
+
+}
+
+.linkspie { text-align: center;
+ 
+}
+
+.listalinks { display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+}
+
+.canob { display:flex;
+    align-items:center;
+    width: 60px; 
+
+}
+
+.lpf { display:flex;
+    align-items:center;
+    width: 60px; 
+
+}
+
+.container1 {  display: grid;
+    grid-template-columns: 0.3fr 1.7fr 1.7fr 0.3fr;
+    grid-template-rows: auto auto 0.1fr auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". encabezado1 encabezado1 ."
+      ". navegacion1 navegacion1 ."
+      ". seccion2 seccion2 ."
+      ". unite fotos1 ."
+      ". pie1 pie1 .";
+  }
+  
+  .encabezado1 { grid-area: encabezado1; }
+  
+  .navegacion1 { grid-area: navegacion1; }
+  
+  .seccion2 { grid-area: seccion2; }
+  
+  .unite { background-color: grey;
+      
+    grid-area: unite; }
+  
+  .fotos1 { background-color: grey;
+       grid-area: fotos1; }
+  
+  .pie1 { grid-area: pie1; }
+
+
+  .grid-noticias {
+    display: grid;
+    grid-template-columns: 0.3fr 2.9fr 0.3fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      ". encabezado ."
+      ". navegacion ."
+      ". seccion1 ."
+      ". pie .";
+  }
+  
+  .encabezado { grid-area: encabezado; }
+  
+  .navegacion { grid-area: navegacion; }
+  
+  .articulo { grid-area: articulo; }
+    
+  .pie { grid-area: pie; }
+
+
+  .tituloglorias {
+
+    text-align: center;
+
+  }
+
+
+  .slider-frame {
+    width: 300px;
+      height: auto;
+    margin:50px auto 0;
+    overflow: hidden;
+    }
+    
+    .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: slide 20s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+    width: 100%;
+    list-style: none;
+    }
+    
+    .slider-frame img {
+    width: 100%;
+    }
+    
+    @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+
+
+  @media (min-width: 473px) {
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto auto 0.auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "encabezado"
+        "navegacion"
+        "seccion1"
+        "contacto"
+        "articulo"
+        "pie";
+
+    
+
+      
+    }
+
+
+    
+    .encabezado { grid-area: encabezado; }
+    
+    .navegacion { grid-area: navegacion; }
+    
+    .articulo { grid-area: articulo; }
+    
+    .seccion1 { grid-area: seccion1; }
+    
+    .pie { grid-area: pie; }
+    
+    .contacto { grid-area: contacto; }
+
+    .grid-noticias {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto 0.1fr 0.6fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "encabezado"
+        "navegacion"
+        "seccion1"
+        "pie";
+    }
+
+  } 
+
+  @media (min-width: 768px) {
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 0.3fr 2.9fr 0.3fr;
+      grid-template-rows: auto auto 0.1fr auto auto 0.6fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". encabezado ."
+        ". navegacion ."
+        ". seccion1 ."
+        ". contacto ."
+        ". articulo ."
+        ". pie .";
+    }
+    .grid-noticias {
+      display: grid;
+      grid-template-columns: 0.3fr 2.9fr 0.3fr;
+      grid-template-rows: auto auto 0.1fr 0.6fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". encabezado ."
+        ". navegacion ."
+        ". seccion1 ."
+        ". pie .";
+    }
+  }
+
+  @media (min-width: 992px) {
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 0.3fr 2.9fr 0.3fr;
+      grid-template-rows: auto auto 0.1fr auto auto 0.6fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". encabezado ."
+        ". navegacion ."
+        ". seccion1 ."
+        ". contacto ."
+        ". articulo ."
+        ". pie .";
+    }
+    .grid-noticias {
+      display: grid;
+      grid-template-columns: 0.3fr 2.9fr 0.3fr;
+      grid-template-rows: auto auto 0.1fr 0.6fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        ". encabezado ."
+        ". navegacion ."
+        ". seccion1 ."
+        ". pie .";
+    }
+
+
+  }
+
+  
