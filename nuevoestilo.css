@@ -25,6 +25,19 @@
 
 }
 
+.imgnob2 {
+
+  border-radius: 20px;
+    border: 2px solid red;
+    display: flex;
+    margin: left;
+    border: 4px;
+    padding: 7px;
+    max-width: 50%;
+
+
+}
+
 .seccion1, .videosyoutube, .glorias, .pie, .tiendoficial {
     border: 2px solid black;
     margin: 4px;
@@ -143,9 +156,44 @@
     50% {margin-left: -200%;}
     70% {margin-left: -200%;}
     
-    75% {margin-left: -300%;}
+    75% {margin-left: -300%;}xt
     100% {margin-left: -300%;}
   }
+
+.formulario {
+  background-image: url("imagenes/tribuna.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}  
+
+.formunob {
+  max-width: 25em;
+  padding: 1.3em;
+  margin: 0 auto;
+  background-color: rgba(120, 119, 123, 0.3) ;
+  font-weight: bold;
+  box-shadow: inset 1px  1px 22px 4px;
+}
+
+.fixture{
+  background-image: url("imagenes/jugadores.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 3px;
+  align-items: center;
+  margin: auto
+}  
+
+
 
 footer {
 
@@ -187,3 +235,8 @@ footer {
 
     }  
     
+    .noticia, .seccion1 {
+      border: 2px solid black;
+      margin: 4px;    
+ }
+
